@@ -89,4 +89,6 @@ Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 # 3. Strategy:
 1. I have used the "he_uniform" initialisation.
 2. To get rid of bias, use_bias= "False"
-3. 
+3. I have used 7 convolution layers of 3x3 and 1 convolution layer of 1x1. 
+4. Used Batch Normalization.
+5. To avoid overfitting used dropout.
