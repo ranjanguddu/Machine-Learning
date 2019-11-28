@@ -13,65 +13,65 @@ model.add(Dropout(0.1))<br />
 
 
 model.add(SeparableConv2D(48, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) # out: 30x30x48 and  R:5
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
 
-model.add(MaxPooling2D(pool_size=(2, 2))) #out: 15x15x48 and R:6
-model.add(Dropout(0.1))
+model.add(MaxPooling2D(pool_size=(2, 2))) #out: 15x15x48 and R:6<br />
+model.add(Dropout(0.1))<br />
 
-model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', border_mode='same', activation= 'relu')) #out: 15x15x96 and R:10
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
-
-
-model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #13x13x96 and R:14
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', border_mode='same', activation= 'relu')) #out: 15x15x96 and R:10<br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
 
-model.add(MaxPooling2D(pool_size=(2, 2))) # out: 6x6x96 and R:16
-model.add(Dropout(0.1))
-
-model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same')) #out: 6x6x192 and R:24
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #13x13x96 and R:14 <br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
 
-model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 4x4x192 and R:32
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(MaxPooling2D(pool_size=(2, 2))) # out: 6x6x96 and R:16<br />
+model.add(Dropout(0.1))<br />
+
+model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same')) #out: 6x6x192 and R:24<br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
 
-model.add(MaxPooling2D(pool_size=(2, 2))) #out: 2x2x192 and R:36
-model.add(Dropout(0.1))
+model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 4x4x192 and R:32<br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
 
-model.add(SeparableConv2D(64, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same'))# out: 2x2x64 and R:44
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
-
-model.add(SeparableConv2D(32, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 1x1x32 and R:52
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(MaxPooling2D(pool_size=(2, 2))) #out: 2x2x192 and R:36<br />
+model.add(Dropout(0.1))<br />
 
 
+model.add(SeparableConv2D(64, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same'))# out: 2x2x64 and R:44<br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
-model.add(Convolution2D(num_classes, 1, 1)) #out: 1x1x10 and R:52
-model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(SeparableConv2D(32, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 1x1x32 and R:52<br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
-model.add(Flatten())
-model.add(Activation('softmax'))
 
-from keras.optimizers import Adam
-from keras.callbacks import LearningRateScheduler
-def scheduler(epoch, lr):
-  return round(0.003 * 1/(1 + 0.319 * epoch), 10)
 
-model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=0.003), metrics=['accuracy'])
+model.add(Convolution2D(num_classes, 1, 1)) #out: 1x1x10 and R:52<br />
+model.add(BatchNormalization())<br />
+model.add(Dropout(0.1))<br />
 
-model_info = model.fit(train_features, train_labels, batch_size=32, epochs=50, verbose=1, validation_data=(test_features, test_labels), callbacks=[LearningRateScheduler(scheduler, verbose=1)])
+model.add(Flatten())<br />
+model.add(Activation('softmax'))<br />
+
+from keras.optimizers import Adam<br />
+from keras.callbacks import LearningRateScheduler<br />
+def scheduler(epoch, lr):<br />
+  return round(0.003 * 1/(1 + 0.319 * epoch), 10)<br />
+
+model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=0.003), metrics=['accuracy'])<br />
+
+model_info = model.fit(train_features, train_labels, batch_size=32, epochs=50, verbose=1, validation_data=(test_features, test_labels), callbacks=[LearningRateScheduler(scheduler, verbose=1)])<br />
 
 # 3. My Model's 50 epoch logs:
 Train on 50000 samples, validate on 10000 samples
