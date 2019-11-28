@@ -1,7 +1,7 @@
 # 1. Final Accuracy of base Model is: 
-Accuracy on test data is: 81.77
+## 81.77
 
-#2. My Model:
+# 2. My Model:
 
 ** Note: "out" stands for: size of output and "R" stands for: Size of Reptive Field
 
