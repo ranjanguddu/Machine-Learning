@@ -5,11 +5,11 @@
 
 ** Note: "out" stands for: size of output and "R" stands for: Size of Reptive Field
 
-model = Sequential()
+model = Sequential() <br />
 
-model.add(SeparableConv2D(48, 3, 3, activation= 'relu', border_mode='same',depthwise_initializer ='he_uniform', input_shape=(32, 32, 3))) # out: 32x32x48 and  R:3
+model.add(SeparableConv2D(48, 3, 3, activation= 'relu', border_mode='same',depthwise_initializer ='he_uniform', input_shape=(32, 32, 3))) # out: 32x32x48 and  R:3 <br />
 model.add(BatchNormalization())
-model.add(Dropout(0.1))
+model.add(Dropout(0.1))<br />
 
 
 model.add(SeparableConv2D(48, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) # out: 30x30x48 and  R:5
