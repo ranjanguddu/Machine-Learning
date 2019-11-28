@@ -7,57 +7,57 @@
 
 model = Sequential()
 
-model.add(SeparableConv2D(48, 3, 3, activation= 'relu', border_mode='same',depthwise_initializer ='he_uniform', input_shape=(32, 32, 3))) # out: 32*32*48 and  R:3
+model.add(SeparableConv2D(48, 3, 3, activation= 'relu', border_mode='same',depthwise_initializer ='he_uniform', input_shape=(32, 32, 3))) # out: 32x32x48 and  R:3
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
-model.add(SeparableConv2D(48, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) # out: 30*30*48 and  R:5
+model.add(SeparableConv2D(48, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) # out: 30x30x48 and  R:5
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
-model.add(MaxPooling2D(pool_size=(2, 2))) #out: 15*15*48 and R:6
+model.add(MaxPooling2D(pool_size=(2, 2))) #out: 15x15x48 and R:6
 model.add(Dropout(0.1))
 
-model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', border_mode='same', activation= 'relu')) #out: 15*15*96 and R:10
+model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', border_mode='same', activation= 'relu')) #out: 15x15x96 and R:10
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
-model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #13*13*96 and R:14
+model.add(SeparableConv2D(96, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #13x13x96 and R:14
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
-model.add(MaxPooling2D(pool_size=(2, 2))) # out: 6*6*96 and R:16
+model.add(MaxPooling2D(pool_size=(2, 2))) # out: 6x6x96 and R:16
 model.add(Dropout(0.1))
 
-model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same')) #out: 6*6*192 and R:24
+model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same')) #out: 6x6x192 and R:24
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
-model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 4*4*192 and R:32
+model.add(SeparableConv2D(192, 3, 3, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 4x4x192 and R:32
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
-model.add(MaxPooling2D(pool_size=(2, 2))) #out: 2*2*192 and R:36
+model.add(MaxPooling2D(pool_size=(2, 2))) #out: 2x2x192 and R:36
 model.add(Dropout(0.1))
 
 
-model.add(SeparableConv2D(64, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same'))# out: 2*2*64 and R:44
+model.add(SeparableConv2D(64, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu', border_mode='same'))# out: 2x2x64 and R:44
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
-model.add(SeparableConv2D(32, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 1*1*32 and R:52
+model.add(SeparableConv2D(32, 2, 2, depthwise_initializer ='he_uniform', activation= 'relu')) #out: 1x1x32 and R:52
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
 
 
-model.add(Convolution2D(num_classes, 1, 1)) #out: 1*1*10 and R:52
+model.add(Convolution2D(num_classes, 1, 1)) #out: 1x1x10 and R:52
 model.add(BatchNormalization())
 model.add(Dropout(0.1))
 
