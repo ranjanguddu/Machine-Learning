@@ -1,0 +1,74 @@
+ "images": [
+    {
+      "id": 0,  ---------------------- Image ID
+      "width": 410,------------------- Widht of Image
+      "height": 308,------------------ Height of the Image
+      "file_name": "1.jpg",----------- Name of the image what was given during annotations
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+      "id": 1,                     =======  there are 50 images like such annotated ===========
+      "width": 500,
+      "height": 333,
+      "file_name": "2.jpg",
+      "license": 1,
+      "date_captured": ""
+    },
+    {
+
+       ],
+  "annotations": [. ------ annonations started from here for 50 images============
+    {
+      "id": 0,
+      "image_id": "0",
+      "category_id": 1,
+      "segmentation": [
+        88,
+        45,
+        383,
+        45,
+        383,
+        272,
+        88,
+        272
+      ],
+      "area": 66965,
+      "bbox": [.      bounding box dimensio-=========
+        88,------leftmost X
+        45,------leftmost Y
+        295,------- Rightmost X
+        227--------- Righntmost Y
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 1,
+      "image_id": "1",
+      "category_id": 1,
+      "segmentation": [======= represent segmentation]. 
+        76,
+        21,
+        268,
+        21,
+        268,
+        265,
+        76,
+        265
+      ],
+      "area": 46848,
+
+
+
+"categories": [
+    {
+      "id": 1,
+      "name": "Dog",  ------ class of the image is Dog
+      "supercategory": "class"
+    },
+    {
+      "id": 2,
+      "name": "Human", -----we have two class defined.....humn and dog..........
+      "supercategory": "class"
+    },
+    {
