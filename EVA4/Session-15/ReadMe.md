@@ -778,5 +778,5 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 
 ## Final Output of the Model:
 Here is the output given by the trained Model after 30 epochs:
-
+---
 <img src="./RESULT_fig.jpg"/>
