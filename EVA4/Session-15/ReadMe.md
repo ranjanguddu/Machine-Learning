@@ -7,7 +7,8 @@ This project is about the Semantic Segmentation of the image  as well as creatin
 ---
 BG and FG_BG Images are 3 chaneel images where as the mask and the depth images are 1 gray-scal image. Below is the preview: 
 
-<a href="url"><img src="https://github.com/ranjanguddu/Machine-Learning/blob/master/EVA4/Session-15/Input_fig.png" align="center" height="150" width="150" ></a>
+<img src="/Input_fig.png" width="150" />
+
 ## On-boarding the data in Colab:
 ___
 
