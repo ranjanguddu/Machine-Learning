@@ -30,6 +30,7 @@ def extract_RAW_DATA(loc):
 ```
 
 After running the above script, the folder structure look like:
+---
 <img src="./fig-1.png" />
 
 Then we unzip all the zip files present in those folder in a folder name \'Unzipped_DATA'. Then run the below script:
