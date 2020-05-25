@@ -5,7 +5,7 @@ This project is about the Semantic Segmentation of the image  as well as creatin
 ---
 ## Input  to the Model
 ---
-BG and FG_BG Images are 3 chaneel images where as the mask and the depth images are 1 gray-scal image. Below is the preview: 
+BG and FG_BG Images are 3 chaneel images where as the mask and the depth images are 1-channel (gray-scale) image. Below is the preview: 
 
 <img src="./Input_fig.png" />
 
