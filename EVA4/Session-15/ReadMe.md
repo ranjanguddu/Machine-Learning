@@ -65,6 +65,7 @@ def extract_data(dir_list, bg_tracker):
 ```
 
 Now the folder structure look like:
+---
 <img src="./fig-2.png" widht='20'/>
 
 ## Prepare Dataset 
