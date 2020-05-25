@@ -7,7 +7,7 @@ This project is about the Semantic Segmentation of the image  as well as creatin
 ---
 BG and FG_BG Images are 3 chaneel images where as the mask and the depth images are 1 gray-scal image. Below is the preview: 
 
-<img src="./Input_fig.png" width="50" />
+<img src="./Input_fig.png" />
 
 ## On-boarding the data in Colab:
 ___
@@ -779,4 +779,4 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 ## Final Output of the Model:
 Here is the output given by the trained Model after 30 epochs:
 
-<img src="./RESULT_fig.jpg" width="50" />
+<img src="./RESULT_fig.jpg"/>
