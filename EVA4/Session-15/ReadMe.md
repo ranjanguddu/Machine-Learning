@@ -65,8 +65,7 @@ def extract_data(dir_list, bg_tracker):
 ```
 
 Now the folder structure look like:
-![form-2](https://github.com/ranjanguddu/Machine-Learning/blob/master/EVA4/Session-15/fig-2.png)
-<img src="./fig-2.png" widht='50'/>
+<img src="./fig-2.png", widht='50'/>
 
 ## Prepare Dataset 
 ---
