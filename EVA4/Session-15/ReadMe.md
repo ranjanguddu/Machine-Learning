@@ -33,7 +33,7 @@ After running the above script, the folder structure look like:
 ---
 <img src="./fig-1.png" />
 
-Then we unzip all the zip files present in those folder in a folder name \'Unzipped_DATA'. Then run the below script:
+In the above folder tracker_file.txt is a file where i have mapped the BG image with the corresponding FG_BG overlayed inage. Then we unzip all the zip files present in those folder in a folder name \'Unzipped_DATA'. Then run the below script:
 
 ```python
 
