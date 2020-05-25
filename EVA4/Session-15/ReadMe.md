@@ -777,4 +777,6 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 
 ## Final Output of the Model:
 Here is the output given by the trained Model after 30 epochs:
-![final_output](https://github.com/ranjanguddu/Machine-Learning/blob/master/EVA4/Session-15/RESULT_fig.jpg)
+
+
+![final_output](https://github.com/ranjanguddu/Machine-Learning/blob/master/EVA4/Session-15/fig.jpg)
