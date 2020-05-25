@@ -30,8 +30,7 @@ def extract_RAW_DATA(loc):
 ```
 
 After running the above script, the folder structure look like:
-![form-1](https://github.com/ranjanguddu/Machine-Learning/blob/master/EVA4/Session-15/fig-1.png)
-
+<img src="./fig-1.png" />
 
 Then we unzip all the zip files present in those folder in a folder name \'Unzipped_DATA'. Then run the below script:
 
@@ -67,6 +66,7 @@ def extract_data(dir_list, bg_tracker):
 
 Now the folder structure look like:
 ![form-2](https://github.com/ranjanguddu/Machine-Learning/blob/master/EVA4/Session-15/fig-2.png)
+<img src="./fig-2.png" widht='50'/>
 
 ## Prepare Dataset 
 ---
