@@ -69,6 +69,7 @@ Now the folder structure look like:
 ---
 <img src="./fig-2.png" widht='20'/>
 
+Here, there are 10 folders of FG_BG Image, Mask Image, and Depth Image. Every folder contains 40K images.
 ## Prepare Dataset 
 ---
 
