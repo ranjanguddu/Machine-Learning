@@ -7,7 +7,7 @@ This project is about the Semantic Segmentation of the image  as well as creatin
 ---
 BG and FG_BG Images are 3 chaneel images where as the mask and the depth images are 1 gray-scal image. Below is the preview: 
 
-<img src="./Input_fig.png" width="1500" />
+<img src="./fig-1.png" width="500" />
 
 ## On-boarding the data in Colab:
 ___
